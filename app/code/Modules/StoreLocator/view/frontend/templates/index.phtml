@@ -6,3 +6,22 @@
         <h1>acá irá el mapa</h1>
     </div>
 </div>
+
+<div id="storelocator-daniel" data-bind="scope: 'storelocator'">
+    <!-- ko template: getTemplate() -->
+    <!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "#storelocator-daniel": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "storelocator": {
+                        "component": "Modules_StoreLocator/js/store-locator"
+                    }
+                }
+            }
+        }
+    }
+</script>
